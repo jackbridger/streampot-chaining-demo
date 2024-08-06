@@ -47,9 +47,9 @@ class StreamPotWithChaining {
   }
 }
 
-const ffmpegChained = new StreamPotWithChaining()
+const streampotWithChaining = new StreamPotWithChaining()
 async function main() {
-    const result = await ffmpegChained
+    const result = await streampotWithChaining
         .input('input.mp4')
         .output('output.mp3')
         .chain() // converts the video to mp3
