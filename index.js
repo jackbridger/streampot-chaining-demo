@@ -48,6 +48,7 @@ class StreamPotWithChaining {
 }
 
 const streampotWithChaining = new StreamPotWithChaining()
+
 async function main() {
     const result = await streampotWithChaining
         .input('input.mp4')
@@ -63,4 +64,5 @@ async function main() {
         .runAndWait() // combines the image and audio
     console.log(result)
 }
+
 main()
